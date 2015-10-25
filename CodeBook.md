@@ -6,10 +6,10 @@ The goal is to make a tidy dataset that can be used by a broad data analysis aud
  
 ## Description
  The data has been obtain from the [Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
- * Description: 
- > Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
- * Dataset Information: 
- > The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+* Description: 
+> Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
+* Dataset Information: 
+> The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
  
 ## Steps
  1. Obtain the data package from: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
@@ -17,7 +17,6 @@ The goal is to make a tidy dataset that can be used by a broad data analysis aud
  3. Unzip the content of the package in your recently created working directory
  4. The main file will be stored these folders: train & test
  5. You will this files (description from the source repository):
-   - 'README.txt'
    - 'features_info.txt': Shows information about the variables used on the feature vector.
    - 'features.txt': List of all features.
    - 'activity_labels.txt': Links the class labels with their activity name.
@@ -32,13 +31,13 @@ The goal is to make a tidy dataset that can be used by a broad data analysis aud
  
 ## Dictionary
  
- - Subject: ID of the 30 persons in the study. (type: numeric)
- - Labels: Descriptive human activity names. (type: character)
- - Features: 86 variables describing different features of the resulting dataset: the means and standard deviations of the measurements of the experiments
+ - **Subject:** ID of the 30 persons in the study. (type: numeric)
+ - **Labels:** Descriptive human activity names. (type: character)
+ - **Features:** 86 variables describing different features of the resulting dataset: the means and standard deviations of the measurements of the experiments (type: numeric)
  
 ### Dataset Structure
 ~~~~~~~
- str(humanActivity_use)
+str(humanActivity_use)
 Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	10299 obs. of  88 variables:
  $ Subject                               : num  1 1 1 1 1 1 1 1 1 1 ...
  $ Labels                                : chr  "STANDING" "STANDING" "STANDING" "STANDING" ...
