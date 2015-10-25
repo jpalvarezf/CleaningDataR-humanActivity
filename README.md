@@ -2,11 +2,11 @@
 Project for the R course in Coursera: Getting and Cleaning Data
 
 ## Description
-This document describes the procedures and scripts of how the Human Activity datasets can be cleaned, joined transformed.
+This document describes the procedures and scripts of how the Human Activity datasets can be cleaned, joined and transformed.
 
 The goal is to make a tidy dataset that can be used by a broad data analysis audience.
 
-**_GO TO the codebook.md file to read an extended explanation of the project_**
+**_GO TO the `codebook.md` file to read an extended explanation of the project_**
 
 ## Scripts
 Refer to the comments in the code to read the explanation of each step
