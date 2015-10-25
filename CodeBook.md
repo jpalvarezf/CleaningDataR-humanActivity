@@ -22,8 +22,7 @@ The goal is to make a tidy dataset that can be used by a broad data analysis aud
    - 'train/y_train.txt': Training labels.
    - 'test/X_test.txt': Test set.
    - 'test/y_test.txt': Test labels.
-   - The following files are available for the train and test data. Their descriptions are equivalent. 
-    - 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
+   - The following files are available for the train and test data. Their descriptions are equivalent. 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
 6. Clean, process and transform the datasets following the instructions in `Readme.md`
 7. You will have two new datasets: humanActivity (tidy dataset with Subjects, Labels and Means and standard deviation of the features of the original dataset); humanActivity_summarize (tidy dataset with the mean of features for each label and each subject)
  
