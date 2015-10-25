@@ -1,15 +1,13 @@
 # Human Activity Code Book
 
-This document describes the procedures and scripts of how the Human Activity datasets can be cleaned, joined transformed.
+This document describes the procedures and scripts of how the Human Activity datasets can be cleaned, joined and transformed.
 
-The goal is to make a tidy dataset that can be used by a broad data analysis audience
+The goal is to make a tidy dataset that can be used by a broad data analysis audience.
  
 ## Description
  The data has been obtain from the [Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
-* Description: 
-> Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
-* Dataset Information: 
-> The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+* **Description:** Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
+* **Dataset Information:** The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
  
 ## Steps
  1. Obtain the data package from: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
@@ -26,7 +24,7 @@ The goal is to make a tidy dataset that can be used by a broad data analysis aud
    - 'test/y_test.txt': Test labels.
    - The following files are available for the train and test data. Their descriptions are equivalent. 
     - 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
-6. Clean, process and transform the datasets following the instructions in Readme.md
+6. Clean, process and transform the datasets following the instructions in `Readme.md`
 7. You will have two new datasets: humanActivity (tidy dataset with Subjects, Labels and Means and standard deviation of the features of the original dataset); humanActivity_summarize (tidy dataset with the mean of features for each label and each subject)
  
 ## Dictionary
@@ -36,7 +34,7 @@ The goal is to make a tidy dataset that can be used by a broad data analysis aud
  - **Features:** 86 variables describing different features of the resulting dataset: the means and standard deviations of the measurements of the experiments (type: numeric)
  
 ### Dataset Structure
-~~~~~~~
+```{r}
 str(humanActivity_use)
 Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	10299 obs. of  88 variables:
  $ Subject                               : num  1 1 1 1 1 1 1 1 1 1 ...
@@ -127,5 +125,5 @@ Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	10299 obs. of  88 variables:
  $ fBodyBodyAccJerkMag_std-517           : num  -0.994 -0.992 -0.991 -0.992 -0.994 ...
  $ fBodyBodyGyroMag_std-530              : num  -0.961 -0.983 -0.986 -0.988 -0.989 ...
  $ fBodyBodyGyroJerkMag_std-543          : num  -0.991 -0.996 -0.995 -0.995 -0.995 ...
-~~~~~~~ 
+```
  
