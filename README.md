@@ -67,7 +67,7 @@ haColNames$V2 <- gsub("\\(", "", haColNames$V2)
 haColNames$V2 <- gsub("\\)", "", haColNames$V2)
 haColNames$V2 <- gsub("\\,", "_", haColNames$V2)
 haColNames$V2 <- gsub("\\-", "_", haColNames$V2)
-#Make a unique names
+#Make a unique name for each feature
 haColNames$V3 <- paste0(haColNames$V2, "-", haColNames$V1)
 names(humanActivity) <- c("Subject", "Labels", haColNames$V3)
 
@@ -78,5 +78,8 @@ humanActivity_use <- humanActivity %>% select(Subject, Labels, contains("mean"),
 
 #Obtain the mean of features for each label and each subject
 humanActivity_summarize <- humanActivity_use %>% group_by(Subject, Labels) %>% summarise_each(funs(mean))
+
+#Write to a file the resulting summarized dataset
+write.table(humanActivity_summarize, "./humanActivitySummarize.txt", row.names = FALSE)
 
 ```
