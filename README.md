@@ -1,5 +1,5 @@
 # CleaningDataR-humanActivity
-Project for the R course in Coursera: Getting and Cleaning Data
+Project for the R course in Coursera: Getting and Cleaning Data - August 2016
 
 ## Description
 This document describes the procedures and scripts of how the Human Activity datasets can be cleaned, joined and transformed.
@@ -14,7 +14,7 @@ Refer to the comments in the code to read the explanation of each step
 ```{r}
 #Title: Run Analysis Scripts
 #Autor: Juan Pablo Alvarez
-#Date: 2015-10-23
+#Date: 2016-08-28
 
 #Install packages if necessary
 #install.packages("dplyr")
