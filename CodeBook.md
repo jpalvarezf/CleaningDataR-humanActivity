@@ -1,4 +1,4 @@
-# Human Activity Code Book
+# Human Activity Code Book - August 2016
 
 This document describes the procedures and scripts of how the Human Activity datasets can be cleaned, joined and transformed.
 
